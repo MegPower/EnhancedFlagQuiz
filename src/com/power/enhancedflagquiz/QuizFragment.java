@@ -299,11 +299,11 @@ public class QuizFragment extends Fragment
 				if(correctFirstTry == 1)
 				{
 					totalFirsts++;
-					correctFirstTry = 0;
 				}
 				//increment the number of correct answers
 				++correctAnswers;
-			
+				correctFirstTry = 0;
+				
 				//subtract from total score if not a first guess
 				totalPoints = (FLAGS_IN_QUIZ * guessRows * 3) - totalGuesses;
 				
